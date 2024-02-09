@@ -1,3 +1,566 @@
+<!-- 
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>VSDC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!- - <link rel="icon" href="images/indexlogo.png" type="image/png" sizes="16x16"> - ->
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/magnific-popup.css">
+  <link rel="stylesheet" href="/css/slick.css">
+  <link rel="stylesheet" href="/css/slick-theme.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="/css\style.css">
+  
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/aos.js"></script>
+</head>
+<style>
+  .navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color:black; /* Set your desired background color * /
+  z-index: 1000; /* Ensure the header stays on top of other content * /
+}
+
+.header {
+  margin-top: 80px; /* Adjust the margin to prevent content from being hidden behind the fixed header */
+}
+
+/* Adjust the content position to accommodate the fixed header  *  /
+.about, .organiser, .designs, .testimonial, .contact, .footer {
+  margin-top: 80px; /* Adjust according to the height of your header * /
+}
+</style>
+
+<script>
+  // Function to detect if the user is using a mobile device
+  function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  // Function to redirect to a mobile-unfriendly page
+  function redirectToDesktop() {
+    // Redirect to a page indicating that the website is not accessible on mobile devices
+    window.location.href = "/";
+  }
+
+  // Check if the user is accessing from a mobile device and redirect if true
+  if (isMobile()) {
+    redirectToDesktop();
+  }
+</script>
+<body >
+
+  <nav class="navbar">
+    <div class="nav-brand-toggler">
+      <a href="/" class="navbar-brand"><i class="fas fa-tooth"></i><span> VSDC</span></a>
+      <button type="button" class="navbar-toggler" id="navbar-toggler">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#home" class="nav-link"><i class="fa fa-home"></i>  HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link"><i class="fa fa-info-circle"></i>  ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="#organisingcommittee" class="nav-link"><i class="fas fa-users"></i>  ORGANISING COMMITTEE</a>
+        </li>
+        <li class="nav-item">
+          <a href="#schedule-section" class="nav-link"><i class="fas fa-clipboard-list"></i>  SCHEDULE</a>
+        </li>
+        <li class="nav-item">
+          <a href="/register" class="place-order" target="_blank"><i class="fas fa-user-plus"></i> REGISTER</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link"><i class="fa fa-envelope"></i>  CONTACT</a>
+        </li>
+       
+      </ul>
+
+      <div class="nav-info">
+        <span class="call-info">
+          <i class="fas fa-phone"></i>
+          +91 9448179948
+        </span>
+     
+      </div>
+    </div>
+  </nav>
+ 
+  <header class="header" id="home" style="margin-top: auto;">
+    <div class="container">
+      <h1 style="font-family:'Lucida Sans'; color: #fff;font-weight: bolder;font-size: 40px;">Karnataka State OMR UG Conference- 2024</h1>
+      <h2 class="header-title" style="font-size: 30px;">Emerging trends in therapeutics</h2>
+      <a href="/register"><button type="button" class="btn">REGISTER</button></a>
+    </div>
+  </header>
+  
+  <div id="confirmationMessageContainer">
+    <p id="confirmationMessage"> Join Us for Karnataka State OMR UG Conference 2024! Happening on 5th and 6th April , 2024 at VS Dental College </p>
+  </div>
+  <section id="about" class="about container section-py">
+    <div class="about-left" data-aos="fade-right">
+      <div class="title">
+        <h4>ABOUT</h4>
+        <h2>Conference details</h2>
+      </div>
+
+      <p>
+      <!-- <p class="para-text"> - ->
+        Karnataka State OMR UG Conference - 2024 on <b>Emerging trends in therapeutics</b>
+      </p>
+      <p><b>Venue: </b> VS Dental College and Hospital, Bengaluru, Karnataka, India.</p>
+      <p><b>Date: </b>5th and 6th April 2024</p>
+    
+      <div class="container-img">
+      <div class="abstract-guidelines" >
+      <!-- <div class="abstract-guidelines" style="padding-left: 35%;"> - ->
+        <div class="title">
+        <h2>Abstract guidelines (Scientific Paper/Poster )</h2>
+      </div>
+        <p>
+          <li>Registration and participation in person are mandatory for all the events.</li>
+          <li>One delegate can present both paper and poster if interested.</li>
+          <li>The Abstract, Poster or paper should not be plagiarized as this can lead to rejection of the abstract/paper/poster.</li>
+          <li>Time allotted
+          <ul>Paper presentation – 7 min (5 min for presentation and 2 min for question and  answer session)</ul>
+          <ul>Poster presentation – 5 min (3 min for presentation and 2 min for question and answer session)</ul>
+        </li>
+          <li>Strict adherence to the time limit should be followed ; failing to do so will disqualify you from the competitive category.</li>
+          <li>The final decision regarding the papers or posters will be sole decision of the scientific team.</li>
+          <h3 class="title">Deadlines for submission</h3>
+          <div>
+          <li>Last date for  abstract submission for the delegate paper or poster – 25th  March 2024 (till 5pm)</li>
+          <li>Last date for submission of final E-poster – 25th  2024 (till 5pm)</li>
+          <li>In case of any queries, please contact: <b> Dr. A G Annaji - 9731255177</b></li>
+        </div>
+          </p>
+      </div>
+      <div class="image-container" style="width: 300px; height: 350px;">
+        <img src="/images/VSDC_GFORM.png">
+        <p>Scan the QR code to submit your abstract</p>
+      </div>
+      </div>
+      <div class="abstract-guidelines">
+        <div class="title">
+          <h2>Guidelines for abstract submission</h2>
+          <p>
+            The author’s identity and college name should not be there.
+            <li>The abstract for the paper and poster presentation should be submitted in either of the three categories namely original research, case report and review.</li>
+            <li>Abstracts should not exceed <b>250 words (excusing references)</b></li>
+            <li>Maximum of two references are allowed.</li>
+            <li>Images, graphs and tables are not allowed in the abstract.</li>
+            <li>Kindly maintain uniform font size of <b>Time new roman 12 for the content</b> and <b>14 for the heading</b>.</li>
+            <li>A structure abstract in the format – (Introduction, Material and Methods, Results, Discussion and Conclusion) should be submitted  for original research.</li>
+            <li>Title should be clear.</li>
+            <li>The E-poster will be scrutinized by our panel of judges and only the finally selected 10 E-posters will be allowed to present at the venue.</li>
+            <li>The abstract for scientific paper should be sent to mail ID – <b>vsdchomrugconference2024@gmail.com</b></li>
+            <li>The abstract for E-poster as well as final E-poster should be sent to mail ID – <b>vsdchomrugconference2024@gmail.com</b></li>
+          </p>
+        </div>
+      </div>
+</div>   
+  </section>
+
+  <section id="organisingcommittee" class="organiser section-py">
+    <div class="container">
+      <div class="title">
+      <h4>Meet our Organising Committee</h4>
+        <h2>PATRONS</h2>
+      </div>
+      <div class="organiser-wrapper" data-aos="fade-up" style="padding-left: 20%;">
+        <div class="organiser-item">
+          <div class="organiser-item-img">
+            <img src="images/Raju.webp" alt="organiser image" >
+            <div class="organiser-overlay">
+              <p>
+                Sri. J. Raju, Chairman of the Governing Council and Director of RVS, is dedicated to fostering excellence at 
+                V.S. Dental College and Hospital. Under his leadership, the institute prioritizes the development 
+                of empowered dental practitioners and strives to elevate oral health standards for individuals and communities. 
+              </p>
+             
+            </div>
+          </div>
+          <div class="organiser-item-footer">
+            <h2>Mr. Raju, Chairman </h2>
+            <h3>VS Dental College and Hospital </h3>
+          </div>
+        </div>
+
+        <div class="organiser-item">
+          <div class="organiser-item-img">
+            <img src="images/Principal.webp" alt="organiser image">
+            <div class="organiser-overlay">
+              <p>As Principal of VS Dental College, Dr.Rajkumar GC brings expertise in Oral and Maxillo-Facial Surgery 
+                and a distinguished background from Rajiv Gandhi University of Health SciencesWith experience 
+                in university governance and examination oversight.
+                He leads with a focus on excellence in education and research.</p>
+              
+            </div>
+          </div>
+          <div class="organiser-item-footer">
+            <h2>Dr. Rajkumar GC, Principal </h2>
+            <h3>Dental College and Hospital</h3>
+          </div>
+        </div>
+        <div class="organiser-item">
+          <div class="organiser-item-img"></div>
+        </div>
+  <!-- ORGANISING COMMITTEE - ->
+
+  
+  
+    </div>
+      <div class="title">
+        <h2>IAOMR OFFICE BEARERS</h2>
+      </div>
+
+      <div class="organiser-wrapper" data-aos="fade-up">
+        <div class="organiser-item">
+          <div class="organiser-item-img">
+            <img src="/images/DrNeethaMishra.png" alt="organiser image" >
+            <div class="organiser-overlay">
+              <p >
+                Dr. Neeta Misra, a senior obstetrician and gynecologist with 28 years' experience, specializes in high-risk pregnancies,
+                 infertility, laparoscopic surgeries, and women's health issues.
+                 She consults at Divine Clinic and Apollo Cradle Royale Hospital after working at Holy Family Hospital, New Delhi.
+              </p>
+              
+            </div>
+          </div>
+          <div class="organiser-item-footer">
+            <h2>President</h2>
+            <h3> Dr. Neeta Misra</h3>
+          </div>
+        </div>
+
+        <div class="organiser-item">
+          <div class="organiser-item-img">
+            <img src="images/DrShivPrasad.jfif" alt="organiser image">
+            <div class="organiser-overlay">
+              <p>
+                As a seasoned Consultant in Dental Digital Imaging with expertise in Cone Beam Computed Tomography (CBCT) 
+                at Digital Dental Imaging Center, He plays a pivotal role in advancing diagnostic capabilities in dentistry. 
+      
+              </p>
+              
+            </div>
+          </div>
+          <div class="organiser-item-footer">
+            <h2>Hon. Secretary</h2>
+            <h3>Dr. Shiva Prasad S</h3>
+          </div>
+        </div>
+
+        <div class="organiser-item">
+          <div class="organiser-item-img">
+            <img src="/images/Avnish.jpeg" alt="organiser image">
+            <div class="organiser-overlay">
+              <p>Dr. Avinash Tejasvi M L is a highly regarded Professor and Head of the 
+                Department of Oral Medicine and Radiology at Kamineni Institute of Dental Sciences in Narketpally, Telangana</p>
+              
+            </div>
+          </div>
+          <div class="organiser-item-footer">
+            <h2>Treasurer</h2>
+            <h3>Dr. Avinash Tejasvi M L</h3>
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        <h2>KIAOMR OFFICE BEARERS</h2>
+      </div>
+      <div class="organiser-wrapper" data-aos="fade-up">
+        <div class="organiser-item">
+          <div class="organiser-item-img">
+            <img src="images/DrAsha.jpg" alt="organiser image" >
+            <div class="organiser-overlay">
+              <p> 
+            Asha R Iyengar is an esteemed academician with over 20 years of experience, 
+            currently serving as the Head of the Department in Oral Medicine and Radiology at RV Dental College and Hospital. 
+            She is a recognized PhD guide affiliated with Rajiv Gandhi University of Health Sciences 
+            and has been actively involved as an examiner for both postgraduate and undergraduate programs for many years
+              </p>
+              
+            </div>
+          </div>
+          <div class="organiser-item-footer">
+            <h2>President</h2>
+            <h3> Dr. Asha R Iyengar</h3>
+          </div>
+        </div>
+
+        <div class="organiser-item">
+          <div class="organiser-item-img">
+            <img src="images/Dr. Ramnarayan BK.jpg" alt="organiser image">
+            <div class="organiser-overlay">
+              <p>
+                Dr. Ramnarayan BK is a seasoned academic leader, serving as Professor, Head, 
+                and Associate Dean - Administration. With 15 years of experience, he has contributed 
+                significantly to research with 46 publications and 5 presentations. Dr. Ramnarayan's 
+                expertise extends to guiding both postgraduate and PhD students, 
+                while also holding key positions in esteemed dental associations</p>
+              
+            </div>
+          </div>
+          <div class="organiser-item-footer">
+            <h2>Hon. Secretary</h2>
+            <h3> Dr. Ramnarayan BK</h3>
+          </div>
+        </div>
+
+        <div class="organiser-item">
+          <div class="organiser-item-img">
+            <img src="/images/ShivuME.png" alt="organiser image">
+            <div class="organiser-overlay">
+              <p>
+                Dr. M E Shivu, an esteemed medical practitioner registered with the Karnataka State Dental Council, 
+                brings a wealth of expertise to his role. With notable achievements such as the JIAOMR 2012
+                 award and serving as an Associate Professor at AECS Maaruti College of Dental Sciences & Research Center from 2010 to 2014
+                </p>
+              
+            </div>
+          </div>
+          <div class="organiser-item-footer">
+            <h2>Treasurer</h2>
+            <h3>Dr. Shivu ME</h3>
+          </div>
+        </div>
+      </div>
+
+      <div id="confirmationMessageContainer">
+        <p id="confirmationMessage"> For any queries regarding registration feel free to contact Dr. Abinetra (Phno : 9448179948) ,
+          Dr. Shailaja (Phone no :  9739382289) ,
+          Dr. Upasana  (Phone no : 8050588990)
+          </p>
+      </div>
+    <section id="designs" class="designs section-py">
+      <div class="title">
+        <h2>COLLEGE ORGANISING COMMITTEE</h2>
+        <h4>Empowering Academia, Inspiring Excellence</h4>
+      </div>
+  
+      <div class="organizing-committee">
+          <div class="committee">
+              <h2>Organizing Chairman</h2>
+              <h3>Dr. Deepak T A</h3>
+          </div>
+  
+          <div class="committee">
+              <h2>Organizing Secretary</h2>
+              <h3>Dr. Sowmya Krishna</h3>
+          </div>
+  
+          <div class="committee">
+              <h2>Treasurer</h2>
+              <h3>Dr. Shailaja Choudary</h3>
+          </div>
+  
+          <div class="committee">
+              <h2>Scientific Chairman</h2>
+              <h3>Dr. A G Annaji</h3>
+          </div>
+  
+          <div class="committee">
+              <h2>Reception/Registration</h2>
+              <h3>Dr. Abinetra M S</h3>
+              <h3>Dr. Upasana L</h3>
+          </div>
+  
+          <div class="committee">
+              <h2>Hospitality</h2>
+              <h3>Dr. Vaibhav L R</h3>
+              <h3>Dr. Dilip Kumar K H</h3>
+          </div>
+      </div>
+  </section>
+ <!-- End of organising committee - ->
+
+
+  <!-- SCHEDULE PART BEGIN -  ->
+  <section id="schedule-section">
+    <div class="title">
+      <h2>SCHEDULE</h2>
+      <h4>Detailed shcedule of conference</h4>
+    </div>
+  <div class="schedule-tables">
+    <table class="schedule-table">
+        <caption class="schedule-table-caption">Day 1 - 05/04/2024</caption>
+        <tr>
+            <th>Time Slot</th>
+            <th>Activity/Session</th>
+        </tr>
+        <tr>
+            <td>09:30am to 10:00am</td>
+            <td>Inauguration of UG Conference</td>
+        </tr>
+        <tr>
+            <td>10:15am to 11:00am</td>
+            <td>1st Keynote Lecture</td>
+        </tr>
+        <tr>
+            <td>11:00am to 11:15am</td>
+            <td>Tea Break</td>
+        </tr>
+        <tr>
+            <td>11:15am to 12:00pm</td>
+            <td>2nd Keynote Lecture</td>
+        </tr>
+        <tr>
+            <td>12:00pm to 01:00pm</td>
+            <td>3rd Keynote Lecture</td>
+        </tr>
+        <tr>
+            <td>01:00pm to 01:30pm</td>
+            <td>Lunch</td>
+        </tr>
+        <tr>
+            <td>02:00pm Onwards</td>
+            <td>Scientific Sessions</td>
+        </tr>
+        <tr>
+            <td>02:00pm Onwards</td>
+            <td>Pre Conference Workshop</td>
+        </tr>
+    </table>
+   
+    <table class="schedule-table">
+        <caption class="schedule-table-caption">Day 2 - 06/04/2024</caption>
+        <tr>
+            <th>Time Slot</th>
+            <th>Activity/Session</th>
+        </tr>
+        <tr>
+            <td>09:30am to 11:00am</td>
+            <td>Scientific Paper Presentation</td>
+        </tr>
+        <tr>
+            <td>11:00am to 11:15am</td>
+            <td>Tea Break</td>
+        </tr>
+        <tr>
+            <td>11:15am to 01:00pm</td>
+            <td>Scientific Paper Presentation</td>
+        </tr>
+        <tr>
+            <td>01:00pm to 02:00pm</td>
+            <td>Lunch</td>
+        </tr>
+        <tr>
+            <td>02:00pm Onwards</td>
+            <td>Valedictory Function</td>
+        </tr>
+    </table>
+</div>
+</section>
+<!-- SCHEDULE PART END  -->
+
+<br/><br><br/>
+<!-- PAYMENT PAGE BEGIN -->
+
+  <!-- <section class="testimonial section-py">
+    <div class="title">
+      <h2>Customer reviews</h2>
+    </div>
+
+
+  </section> - ->
+
+  <section id="contact" class="contact section-py">
+    <div class="contact-wrapper container">
+      <div class="contact-map">
+        <img src="images/contactus.jpg" 
+        width="100px" height="396px" frameborder="0" style="border:0; border-radius: 15px;"
+        allowfullscreen="" aria-hidden="false"
+        tabindex="0"></img>
+       
+      </div>
+      
+      <div class="contact-info">
+        <div class="title">
+          <h2>Write to us your reviews or queries</h2>
+          <p class="contact-line"> If you have any other queries or need further assistance, don't hesitate to ask, or share your valuable reviews with us.</p>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/mleqjkpq" method="POST">
+
+          <div class="form-group">
+            <input type="text" class="form-control" naame="name" placeholder="Full name">
+            <input type="email" class="form-control" name="email" placeholder="Email address">
+          </div>
+          <input type="text" class="form-control" name="subject" placeholder="Subject">
+          <textarea  rows="5" class="form-control" name="message" placeholder="Feel free to drop your query/suggestions/reviews"></textarea>
+          <input type="submit" class="btn contact-btn" value="Submit">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer section-py">
+    <div class="footer-wrapper container" >
+      <div class="footer-item" style="margin-right: 170px;" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2732799039345!2d77.57211207507615!3d12.95435698735939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e5588a7227%3A0xa7fe8d29e8c308b9!2sVokkaligara%20Sangha%20Dental%20College%20%26%20Hospital!5e0!3m2!1sen!2sin!4v1707399680477!5m2!1sen!2sin" width="450" height="425" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="footer-item" style="margin-left: 170px;font-size: 18px;">
+        <h3 style="font-weight: bolder;">Our Recommendation for Accommadation</h3>
+        <p>Treebo Trend Akshaya Lalbagh -  Rs 2279/ night</p>
+        <p>Nandini Deluxe -  Rs 1319/ night</p>
+        <p>The lounge Hotel - Rs 1130/ night</p>
+        <p>Royal Grand Residency - Rs 1000/ night</p>
+        <p>Hotel RR International - Rs 1350/ night</p>
+      </div>
+    </div>
+  </footer>
+  <div id="confirmationMessageContainer">
+    <p id="confirmationMessage"> For any further assistance please feel free to contact us 
+      Jahnavi (9448112800) , Praveen Jain (8904726546) or Dishanth (9113999625)
+      </p>
+  </div>
+  <H3></H3>
+  <div  style="height: 20px; text-align: center;">
+    <!-- <div class="footer-icons">
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.pinterest.com" target="_blank">
+        <i class="fab fa-pinterest"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div> - ->
+    <p class="para-text">Copyright 2024 &copy; VSDC Karnataka State OMR UG Conference- 2024</p>
+    <p class="para-text">All rights reserved.</p>  
+  </div>
+  
+</html> -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +581,7 @@
   <link rel="stylesheet" href="/css/slick-theme.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="/css\style.css">
+  <link rel="stylesheet" href="/css/style.css">
   
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
@@ -45,24 +608,6 @@
   margin-top: 80px; /* Adjust according to the height of your header */
 }
 </style>
-
-<script>
-  // Function to detect if the user is using a mobile device
-  function isMobile() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  }
-
-  // Function to redirect to a mobile-unfriendly page
-  function redirectToDesktop() {
-    // Redirect to a page indicating that the website is not accessible on mobile devices
-    window.location.href = "/";
-  }
-
-  // Check if the user is accessing from a mobile device and redirect if true
-  if (isMobile()) {
-    redirectToDesktop();
-  }
-</script>
 <body >
 
   <nav class="navbar">
@@ -353,6 +898,124 @@
           Dr. Upasana  (Phone no : 8050588990)
           </p>
       </div>
+
+      <!-- Pre conference  speakers -->
+      <section id="designs" class="designs section-py">
+        <div class="title">
+          <h2>Pre Conference Resource person </h2>
+          <h4>Building Bridges: Connecting Minds Before the Conference</h4>
+          
+        </div>
+    
+        <div class="designs-wrapper popup-gallery" data-aos="fade-up">
+    
+          <div class="designs-item">
+            <a href="images/carlos-torres-fouVDmGXoPI-unsplash.jpg">
+              <img src="/images/Deshpande.jpeg" alt="food image" style="height: 400px;">
+              <div class="designs-overlay">
+                <div class="designs-overlay-content">
+                  <div>
+                    <h2>Dr. Deshpande Ashwini Suresh</h2>
+                    
+                  </div>
+                  <h5>MDS Oral medicine</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="designs-item">
+            <a href="images/kunal-goswami-dz0Q0FS_oTQ-unsplash.jpg">
+              <img src="/images/Vasanthi.jpeg" alt="food image" style="height: 400px;">
+              <div class="designs-overlay">
+                <div class="designs-overlay-content">
+                  <div>
+                    <h2>Dr Vasanti Jirge</h2>
+                    
+                  </div>
+                  <h5>MDS Oral medicine</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="designs-item">
+            <a href="images/karolina-grabowska-sGpNVtlumEc-unsplash.jpg">
+              <img src="/images/Balasubramanya.jpeg" alt="food image" style="height: 400px;">
+              <div class="designs-overlay">
+                <div class="designs-overlay-content">
+                  <div>
+                    <h2>Dr.Balasubramanya K.V.</h2>
+                  </div>
+                  <h5>Periodontist & Laser Practitioner</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+      </section>
+    
+      <!-- End of pre conference speakers -->
+
+
+      <!-- Key note speakers -->
+
+      <section id="designs" class="designs section-py">
+        <div class="title">
+          <h2>Key Note Speakers </h2>
+          <h4>Empowering Minds, Igniting Change: Unleashing Inspiration One Speech at a Time</h4>
+          
+        </div>
+    
+        <div class="designs-wrapper popup-gallery" data-aos="fade-up">
+    
+          <div class="designs-item">
+            <a href="images/carlos-torres-fouVDmGXoPI-unsplash.jpg">
+              <img src="/images/Gifty.jpeg" alt="food image" style="height: 400px;">
+              <div class="designs-overlay">
+                <div class="designs-overlay-content">
+                  <div>
+                    <h2>Gifty Immanuel</h2>
+                    
+                  </div>
+                  <h5>MD,PhD,FRCP,FIDSA. <br/>Director, Center for AIDS & Antiviral Research</h5>
+                  <h5> </h5>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="designs-item">
+            <a href="images/kunal-goswami-dz0Q0FS_oTQ-unsplash.jpg">
+              <img src="/images/Hemanth.png" alt="food image" style="height: 400px;">
+              <div class="designs-overlay">
+                <div class="designs-overlay-content">
+                  <div>
+                    <h2>DR. HEMANT R UMARJI</h2>
+                    
+                  </div>
+                  <h5>Retired Professor and HOD in Oral Medicine & Radiology at GDC H Mumbai.Has more than 35 years of teaching experience.</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="designs-item">
+            <a href="images/karolina-grabowska-sGpNVtlumEc-unsplash.jpg">
+              <img src="/images/Suhas.jpeg" alt="food image" style="height: 400px;">
+              <div class="designs-overlay">
+                <div class="designs-overlay-content">
+                  <div>
+                    <h2>Dr. Suhas Shetty</h2>
+                    <h2></h2>
+                  </div>
+                  <h5>MDS ORAL MEDICINE</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+      </section>
+
+      <!-- End of key note speakers -->
     <section id="designs" class="designs section-py">
       <div class="title">
         <h2>COLLEGE ORGANISING COMMITTEE</h2>
