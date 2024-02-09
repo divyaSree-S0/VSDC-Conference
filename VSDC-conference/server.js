@@ -145,7 +145,7 @@ require('dotenv').config();
 
 // Importing credentials from the configuration file
 const { USER, PASSWORD } = require('./config');
-
+console.log(USER,PASSWORD);
 
 const port = 3000;
 app.set('view engine', 'ejs');
@@ -246,9 +246,13 @@ const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: USER,
-        pass: PASSWORD
+        pass: PASSWORD,
+        type: 'login'
         // user: 'vsdchomrugconference2024@gmail.com',
         // pass: 'roeuogkrqzfvaucu'
+    },
+    tls: {
+        rejectUnauthorized: false
     }
 });
 
