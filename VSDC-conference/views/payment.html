@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="images/indexlogo.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css\style.css">
+  
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="../server.js"></script>
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<style>
+  .navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color:black; /* Set your desired background color */
+  z-index: 1000; /* Ensure the header stays on top of other content */
+}
+
+.header {
+  margin-top: 80px; /* Adjust the margin to prevent content from being hidden behind the fixed header */
+}
+
+/* Adjust the content position to accommodate the fixed header */
+.about, .organiser, .designs, .testimonial, .contact, .footer {
+  margin-top: 80px; /* Adjust according to the height of your header */
+}
+
+</style>
+<body ng-app="" ng-init="dis:false">
+  <nav class="navbar">
+    <div class="nav-brand-toggler">
+      <a href="/" class="navbar-brand"><i class="fas fa-tooth"></i><span> VSDC</span></a>
+      <button type="button" class="navbar-toggler" id="navbar-toggler">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="/" class="nav-link"><i class="fa fa-home"></i>  HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="/#about" class="nav-link"><i class="fa fa-info-circle"></i>  ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="/#organisingcommittee" class="nav-link"><i class="fas fa-users"></i>  ORGANISING COMMITTEE</a>
+        </li>
+        <li class="nav-item">
+          <a href="/#schedule-section" class="nav-link"><i class="fas fa-clipboard-list"></i>  SCHEDULE</a>
+        </li>
+        <li class="nav-item">
+          <a href="/register" class="place-order" target="_blank"><i class="fas fa-user-plus"></i> REGISTER</a>
+        </li>
+        <li class="nav-item">
+          <a href="/#contact" class="nav-link"><i class="fa fa-envelope"></i>  CONTACT</a>
+        </li>
+       
+      </ul>
+
+      <div class="nav-info">
+        <span class="call-info">
+          <i class="fas fa-phone"></i>
+          +918978656545
+        </span>
+     
+      </div>
+    </div>
+  </nav>
+<br/><br/><br/><br/>
+<section class="paymentpage">
+  <center>
+  <div class="title">
+    <h2>REGISTER</h2>
+    <h4>AMOUNT DETAILS</h4>
+    </div>
+  </center>
+    <center>
+    <table id="amount-details" class="schedule-table">
+      <tr>
+        <th>REGISTRATION TYPE</th>
+        <th>AMOUNT</th>
+      </tr>
+      <tr>
+        <td>Delegates</td>
+        <td>1500/-</td>
+      </tr>
+      <tr>
+        <td>Spot Registration</td>
+        <td>2000/-</td>
+      </tr>
+      <tr>
+        <td>Staff</td>
+        <td>1500/-</td>
+      </tr>
+      <tr>
+        <td>Pre-Conference Course  Fee </td>
+        <td>500/-</td>
+      </tr>
+    </table>
+  </center><br/><br/>
+  <h3 style="text-align: center;">SCAN THE RESPECTIVE QR TO MAKE PAYMENT</h3><br/>
+  </div>
+  <div class="payment-row" style="padding-left: 40px;padding-right: 40px;">
+    
+    <div class="payment" style="padding-right: 20px;">
+        <div class="seat-type">
+            <h2>Delegates</h2>
+            <p>Amount: Rs 1500/-</p>
+            <form action="/register" method="POST" >
+            <div class="account-details">
+              <label>Name</label>
+              <input type="text" placeholder="Enter your name" ng-model="n" name="name" required>
+              <label>Email Id</label>
+              <input type="email" placeholder="Enter your email id" ng-model="m" name="mail" required>
+              <label>Phone number</label>
+              <input type="number" placeholder="Enter your phone number" ng-model="p" name="phno" required>
+              <label>College Name</label>
+              <input type="text" placeholder="Enter your college name" ng-model="c" name="colname" required>
+              <input type="hidden" name="registrationType" value="Delegates">
+              <input type="hidden" name="amount" value="1500">
+          </div><br/><br/>
+            <div class="qr-code">
+                <img src="/images/IAOR 1500RS..png" alt="QR Code for Delegates">
+            </div>
+            <br/><br/>
+          <h4>After you pay the amount , please enter UPI Transaction ID below</h4>
+            <div>
+            <label for="upi-transaction-id">Enter UPI Transaction ID:</label><br/><br/>
+              <input type="text" name="upi-id" id="upi-transaction-id" placeholder="Enter UPI Transaction ID" required ><br/><br/>
+              <button class="submit-button" onclick="submitTransaction(this)">Submit</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <div class="payment" style="padding-right: 20px;">
+      <div class="seat-type">
+          <h2>Staff</h2>
+          <p>Amount: Rs 1500/-</p>
+          <form action="/register" method="POST">
+          <div class="account-details">
+              <label>Name</label>
+              <input type="text" placeholder="Enter your name" name="name" required>
+              <label>Email Id</label>
+              <input type="email" placeholder="Enter your email id" name="mail" required>
+              <label>Phone number</label>
+              <input type="number" placeholder="Enter your phone number" name="phno" required>
+              <label>College Name</label>
+              <input type="text" placeholder="Enter your college name" name="colname" required>
+              <input type="hidden" name="registrationType" value="Staff">
+              <input type="hidden" name="amount" value="1500">
+          </div><br/><br/>
+          <div class="qr-code">
+              <img src="/images/IAOR 1500RS..png" alt="QR Code for Staff">
+          </div><br/><br/>
+          <h4>After you pay the amount , please enter UPI Transaction ID below</h4>
+          <div>
+            <label for="upi-transaction-id">Enter UPI Transaction ID:</label><br/><br/>
+              <input type="text" name="upi-id" id="upi-transaction-id" placeholder="Enter UPI Transaction ID" required><br/><br/>
+              <button class="submit-button" onclick="submitTransaction(this)">Submit</button>
+            </div>
+      </form>
+      </div>
+  </div>
+  <div class="payment" style="padding-right: 20px;">
+        <div class="seat-type">
+            <h2>Delegates with Pre-Conference Course</h2>
+            <p>Amount: Rs 2000/-</p>
+            <form action="/register" method="POST">
+            <div class="account-details">
+              <label>Name</label>
+              <input type="text" placeholder="Enter your name" name="name" required>
+              <label>Email Id</label>
+              <input type="email" placeholder="Enter your email id" name="mail" required>
+              <label>Phone number</label>
+              <input type="number" placeholder="Enter your phone number" name="phno" required>
+              <label>College Name</label>
+              <input type="text" placeholder="Enter your college name" name="colname" required>
+              <label>Pre Conference Type</label>
+              <select id="conferenceSelect" onchange="handleSelectChange()" required>
+                <option value="" selected disabled>Select Conference</option>
+                <option value="1">Pre Conference -1</option>
+                <option value="2">Pre Conference -2</option>
+                <option value="3">Pre Conference -3</option>
+            </select>
+            <input type="hidden" name="registrationType" value="Delegates with Pre Conference Course">
+            
+              
+              <input type="hidden" name="amount" value="2000">
+          </div>
+            <div class="qr-code">
+                <img src="/images/IAOR 2000RS.png" alt="QR Code for Delegates">
+            </div>
+            <h4>After you pay the amount , please enter UPI Transaction ID below</h4>
+            <div>
+              <label for="upi-transaction-id">Enter UPI Transaction ID:</label><br/><br/>
+                <input type="text" name="upi-id" id="upi-transaction-id" placeholder="Enter UPI Transaction ID" required><br/><br/>
+                <button class="submit-button" onclick="submitTransaction(this)">Submit</button>
+              </div>
+      </form>
+    </div>
+    
+</div>
+</div><div id="confirmationMessageContainer">
+  <p id="confirmationMessage">After submitting the form, expect a confirmation email shortly to your provided email address. 
+    If there's any delay or if you don't receive it, please note it could be due to network or technical issues.
+     Avoid multiple submissions and contact conference organizers for assistance.
+     They will promptly provide your Unique Identifier (UID). Thank you for your cooperation and understanding.
+    </p>
+</div>
+
+
+
+</section>
+
+<!-- payment page end -->
+
+
+
+</body>
+<script>
+  function handleSelectChange() {
+    var selectElement = document.getElementById("conferenceSelect");
+    var hiddenInputElement = document.querySelector("input[name='registrationType']");
+    var selectedOption = selectElement.options[selectElement.selectedIndex].text;
+    if (selectedOption.trim() === "") {
+        alert("Please select a conference option.");
+        return;
+    }
+    hiddenInputElement.value = "Delegates " + selectedOption;
+    
+}
+// JavaScript file
+
+// Function to validate form fields before enabling the "PAID" button
+/*function validateFormInputs(paymentDiv) {
+    var inputs = paymentDiv.querySelectorAll('input');
+    for (var i = 0; i < inputs.length; i++) {
+        if (!inputs[i].value.trim()) {
+            alert('Please fill in all the fields.');
+            return false;
+        }
+    }
+    return true;
+}*/
+
+// Function to show UPI transaction ID input field
+/*function showTransactionInput(button) {
+  var paymentDiv = button.closest('.payment');
+  var nameInput = paymentDiv.querySelector('input[name="name"]');
+  var mailInput = paymentDiv.querySelector('input[name="mail"]');
+  var phnoInput = paymentDiv.querySelector('input[name="phno"]');
+  var colnameInput = paymentDiv.querySelector('input[name="colname"]');
+
+  // Check if all fields are filled
+  if (!nameInput.value.trim() || !mailInput.value.trim() || !phnoInput.value.trim() || !colnameInput.value.trim()) {
+    alert("Fill all the fields!");
+    return;
+  }
+*/
+  // var transactionIdDiv = paymentDiv.querySelector('.transaction-id');
+  // if (transactionIdDiv) {
+  //   transactionIdDiv.style.display = 'block';
+  // }
+
+
+
+
+function submitTransaction(button) {
+            var transactionIdInput = button.parentElement.querySelector('#upi-transaction-id');
+            var transactionId = transactionIdInput.value;
+            // Process the transaction ID as needed
+            console.log('Transaction ID:', transactionId);
+            // You can add further processing here, like sending the transaction ID to a server
+        }
+    </script>
+</script>
+</html>

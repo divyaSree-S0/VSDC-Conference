@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+:root {
+  --red: #D0A2F7;
+  --black: #0f1b3a;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  background-color:#F1EAFF;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+header .logo {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+header .logo img {
+  width: 50px;
+}
+
+header .navbar a {
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--black);
+  font-weight: bold;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+  color: #fff;
+  background: var(--red);
+}
+
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  border-radius: 50%;
+  background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+  color: #fff;
+  background: var(--red);
+}
+
+header .icons #menu-bars {
+  display: none;
+}
+
+
+.product-container {
+    max-width: 800px;
+    margin: 150px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pchild {
+    width: 48%; /* Adjust the width to leave space for margins */
+    margin-bottom: 20px;
+}
+.pchild:nth-child(3) {
+    width: 100%;
+    margin-left: 20px;
+}
+.product-image {
+    max-width: 70%;
+    height: fit-content;width: fit-content;/*height:30 rem*/
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.product-info {
+    flex-grow: 1; /* Take remaining space beside the image */
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/*here*/
+
+/* Add this CSS for the image frames */
+.product-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main-image {
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 100%; /* Set a specific width */
+  height: 400px; /* Set a specific height */
+  object-fit: cover; /* Ensure the image covers the designated space */
+  border-radius: 8px;
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.small-images {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.small-image {
+  width: 100px; /* Set a specific width */
+  height: 100px; /* Set a specific height */
+  object-fit: cover; /* Ensure the image covers the designated space */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  margin: 0 6px;/*Data and image to be separated*/
+}
+
+.small-image:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+.button-container {
+    display: flex;
+    justify-content: left;
+    gap:5px;
+    margin-top: 20px;
+  }
+  
+  /* Style for the custom buttons */
+  .custom-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #CCCCCC; /* Monochromatic color */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    background-color: #999999; /* Darker color on hover */
+    transform: scale(1.02);
+  }
+  
+  .custom-button:active {
+    background-color: #333333; /* Dark gray color when clicked */
+    color: #FFFFFF; /* Text color change on click, if needed */
+  }
+/*here*/
+
+
+/*.variant-buttons {
+    margin-bottom: 20px;
+}
+
+.variant-button {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    color: black ;
+    border: black solid 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.variant-button:hover {
+    background: #80558C;
+    transform: scale(1.02);
+}
+
+.variant-button.active{
+  background: #000000;
+  color: white;
+}
+*/
+.product-price {
+    font-size: 24px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+    display: block;
+    width: fit-content;
+    padding: 10px;
+    background-color: #D0A2F7;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart-btn:hover {
+    background: #80558C;
+    transform: scale(1.02);
+}
+
+.prod-desc {
+    margin-bottom: 20px;
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-direction: column;
+    max-height: 860px;
+    overflow-y: auto;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+}
+
+.prod-desc::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+
+.prod-desc p {
+  margin-bottom: 20px; /* Adjust this value as needed */
+}
+
+.product-details-heading {
+  font-size: 24px; /* Adjust the size as needed */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-details {
+    font-size: 17px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 2px;
+    /*flex-direction: row;*/
+    
+}
+.subtitle {
+    font-weight: 900;
+}
+.cart-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40rem;
+  overflow-y: auto;
+  display: none;
+  margin-top: 66px;
+  background-color: white;
+  color: black;
+}
+
+.cart {
+  padding: 1rem;
+}
+
+.cart h2 {
+  font-size: 2rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--red);
+  font-size: 2.5rem;
+  padding-top: 1.3rem;
+}
+
+.cart__close {
+  position: absolute;
+  padding-top: 1.3rem;
+  top: 1.3rem;
+  right: 0.5rem;
+  font-size: 2.8rem;
+  cursor: pointer;
+}
+.cart__close:hover{
+    color:lightslategray ;
+}
+
+.cart-item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.4rem;
+  font-size: larger;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cart-item-details h3 {
+  font-size: 1.7rem;
+  margin: 1px;
+}
+
+.cart-item-price {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  font-weight: 500px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.quantity-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 2rem;
+  height: 2rem;
+  color: var(--black);
+  margin-left: 3px;
+  margin-right: 3px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background: #eee;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.quantity {
+  margin: 0rem 0.5rem;
+  font-size: 1.7rem;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.pay-button {
+  padding: 0.6rem 3rem;
+  background-color: var(--red);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pay-button:hover {
+  background-color: #1d3461;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: #eee;
+  }
+
+  .cloths .box-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #search-form #search-box {
+    width: 90%;
+    margin: 0 1rem;
+  }
+
+  .home .home-slider .slide .content h3 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .cloths .box-container .box img {
+    height: auto;
+    width: 50%;
+  }
+
+  .order form .inputBox .input {
+    width: 100%;
+  }
+}
