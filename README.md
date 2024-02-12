@@ -2,7 +2,7 @@
 
 A website developed for the Karnataka State - IAOMR UG Conference- 2024 on "EMERGING TRENDS IN THERAPEUTICS" conducted by 
 Vokkaligara Sangha Dental College & Hospital on
-# 5th and 6th April 2024
+5th and 6th April 2024
 
 Tech stack:
 
