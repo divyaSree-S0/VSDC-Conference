@@ -152,7 +152,7 @@ app.get("/register", (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'payment.html'));
 });
 
-mongoose.connect('mongodb://localhost:27017/VSDC', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGOURL, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
