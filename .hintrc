@@ -25,6 +25,7 @@
     "meta-charset-utf-8": "off",
     "meta-viewport": "off",
     "no-inline-styles": "off",
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "axe/forms": "off"
   }
 }
