@@ -7,7 +7,9 @@ Vokkaligara Sangha Dental College & Hospital on
 Tech stack:
 
 > HTML, CSS & JS - frontend
+
 > Node.js - backend
+
 > MongoDB - database
 
 
