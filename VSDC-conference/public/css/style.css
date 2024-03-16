@@ -378,7 +378,23 @@
   .designs-item:hover .designs-overlay-content{
       transform: translateY(0);
   }
+  /* Blinking test css */
   
+  #blink_text{	
+      animation-name:blink;
+      width:280px;
+      animation-duration:2s;
+      animation-timing-function:ease-in;
+      animation-iteration-count:Infinite;
+    }
+    
+    @keyframes blink{
+        0%{color:red;}
+        50%{color:rgb(199, 191, 191);}
+        100%{color:red;}
+    }
+    
+    /* Blinking test css */
 
   /* ORGANISING COMMITTEE */
   .organizing-committee {
@@ -564,6 +580,7 @@
     width: calc(100%);/*  Adjusted width with padding */
     background-color: #000; /* Background color */
     padding: 0 30px; /* 30px padding on both sides */
+    margin-bottom: -25px;
   }
   
   #confirmationMessage {
